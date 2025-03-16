@@ -35,7 +35,7 @@ export default function VirtualListOne({ listData, itemSize, listSize }: Props) 
       onScroll={handleScroll}
       style={{
         height: "100%",
-        overflow: "auto",
+        overflow: "auto", // 如果不设置，会导致滚动条消失
         position: "relative",
       }}>
       {/* 用于撑开整个列表组件的空盒子 */}
@@ -78,7 +78,6 @@ export default function VirtualListOne({ listData, itemSize, listSize }: Props) 
           )
         }
       </div>
-
     </div>
   )
 }

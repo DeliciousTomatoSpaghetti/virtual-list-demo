@@ -4,7 +4,7 @@ import VirtualListOne from "./VirtualListOne"
 
 export default function ListOne() {
   const [listData, setListData] = useState<number[]>([])
-  const listSize = 500
+  const listSize = 460
   useEffect(() => {
     const tempArr = []
     for (let i = 0; i < 100000; i++) {
